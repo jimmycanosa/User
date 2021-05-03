@@ -1,0 +1,40 @@
+{
+    "dart.flutterSdkPath": "C:\\src\\flutter",
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "dart.debugExternalLibraries": true,
+    "dart.debugSdkLibraries": false,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "workbench.sideBar.location": "right",
+    // my config
+    "editor.rulers": [80],
+    "window.title": "${activeEditorMedium}${separator}${rootPath}",
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true
+        // "**/*.code-search": true
+    },
+    "window.menuBarVisibility": "toggle",
+    "autoHide.hideOnOpen": true,
+    "autoHide.autoHideSideBar": true,
+    "autoHide.autoHidePanel": true,
+    "python.formatting.provider": "black",
+    "editor.wordWrap": "on",
+    "workbench.startupEditor": "none",
+}
