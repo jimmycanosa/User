@@ -405,4 +405,14 @@
         "command": "editor.action.peekImplementation",
         "when": "editorHasImplementationProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
     },
+    {
+        "key": "ctrl+shift+.",
+        "command": "paredit.sexpRangeExpansion",
+        "when": "calva:keybindingsEnabled && editorTextFocus && !calva:cursorInComment && editorLangId == 'clojure' && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "ctrl+shift+,",
+        "command": "paredit.sexpRangeContraction",
+        "when": "calva:keybindingsEnabled && editorTextFocus && !calva:cursorInComment && editorLangId == 'clojure' && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+    },
 ]

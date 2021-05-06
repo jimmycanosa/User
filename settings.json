@@ -37,4 +37,11 @@
     "python.formatting.provider": "black",
     "editor.wordWrap": "on",
     "workbench.startupEditor": "none",
+    "calva.paredit.defaultKeyMap": "strict",
+    "calva.prettyPrintingOptions": {
+        "enabled": false,
+        "printEngine": "pprint",
+        "width": 120,
+        "maxLength": 50
+    },
 }
