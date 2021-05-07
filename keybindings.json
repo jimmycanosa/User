@@ -42,20 +42,6 @@
         "when": "dart-code:anyProjectLoaded"
     },
     {
-        "key": "ctrl+alt+w",
-        "command": "workbench.action.closeWindow",
-        "when": "!editorIsOpen && !multipleEditorGroups"
-    },
-    {
-        "key": "ctrl+alt+w",
-        "command": "workbench.action.closeActiveEditor"
-    },
-    {
-        "key": "ctrl+alt+w",
-        "command": "workbench.action.closeGroup",
-        "when": "activeEditorGroupEmpty && multipleEditorGroups"
-    },
-    {
         "key": "ctrl+alt+p",
         "command": "workbench.action.quickOpen"
     },
@@ -76,10 +62,6 @@
         "key": "ctrl+alt+r",
         "command": "workbench.action.quickOpenNavigateNextInRecentFilesPicker",
         "when": "inQuickOpen && inRecentFilesPicker"
-    },
-    {
-        "key": "ctrl+alt+y",
-        "command": "redo"
     },
     {
         "key": "ctrl+alt+a",
@@ -154,10 +136,6 @@
         "command": "workbench.action.togglePanel"
     },
     {
-        "key": "ctrl+alt+v",
-        "command": "editor.action.clipboardPasteAction"
-    },
-    {
         "key": "ctrl+alt+b",
         "command": "workbench.action.toggleSidebarVisibility"
     },
@@ -177,20 +155,11 @@
         "when": "suggestWidgetVisible"
     },
     {
-        "key": "ctrl+alt+x",
+        "key": "ctrl+x ctrl+x",
         "command": "editor.action.clipboardCutAction"
     },
     {
-        "key": "ctrl+alt+x",
-        "command": "filesExplorer.cut",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
-    },
-    {
-        "key": "ctrl+alt+z",
-        "command": "undo"
-    },
-    {
-        "key": "ctrl+alt+c",
+        "key": "ctrl+c ctrl+c",
         "command": "editor.action.clipboardCopyAction"
     },
     {
@@ -331,7 +300,7 @@
         "when": "calva:cursorBeforeComment && editorLangId == 'clojure' || calva:keybindingsEnabled && config.calva.paredit.hijackVSCodeDefaults && editorTextFocus && !calva:cursorInComment && editorLangId == 'clojure' && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
     },
     {
-        "key": "ctrl+c ctrl+c",
+        "key": "ctrl+c ctrl+x",
         "command": "calva.interruptAllEvaluations",
         "when": "calva:connected && calva:keybindingsEnabled"
     },
@@ -414,5 +383,25 @@
         "key": "ctrl+shift+,",
         "command": "paredit.sexpRangeContraction",
         "when": "calva:keybindingsEnabled && editorTextFocus && !calva:cursorInComment && editorLangId == 'clojure' && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-emacs.C-w",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+w",
+        "command": "-emacs.M-w",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "-emacs.C-y",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "-emacs.cursorPageDown",
+        "when": "editorTextFocus && !suggestWidgetVisible"
     },
 ]
