@@ -156,11 +156,13 @@
     },
     {
         "key": "ctrl+x ctrl+x",
-        "command": "editor.action.clipboardCutAction"
+        "command": "editor.action.clipboardCutAction",
+        "when": "!terminalFocus"
     },
     {
         "key": "ctrl+c ctrl+c",
-        "command": "editor.action.clipboardCopyAction"
+        "command": "editor.action.clipboardCopyAction",
+        "when": "!terminalFocus"
     },
     {
         "key": "ctrl+alt+-",
