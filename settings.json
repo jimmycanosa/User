@@ -44,4 +44,5 @@
         "width": 120,
         "maxLength": 50
     },
+    "terminal.integrated.tabs.enabled": true,
 }
