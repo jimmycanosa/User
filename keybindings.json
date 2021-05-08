@@ -73,9 +73,9 @@
         "when": "listFocus && listSupportsMultiselect && !inputFocus"
     },
     {
-        "key": "ctrl+alt+d",
+        "key": "ctrl+l",
         "command": "editor.action.addSelectionToNextFindMatch",
-        "when": "editorFocus"
+        "when": "editorFocus && !terminalFocus"
     },
     {
         "key": "ctrl+alt+f",
@@ -230,7 +230,7 @@
     {
         "key": "ctrl+l",
         "command": "workbench.debug.panel.action.clearReplAction",
-        "when": "terminal.active"
+        "when": "terminalFocus"
     },
     {
         "key": "ctrl+n",
