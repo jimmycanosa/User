@@ -406,4 +406,9 @@
         "command": "-emacs.cursorPageDown",
         "when": "editorTextFocus && !suggestWidgetVisible"
     },
+    {
+        "key": "ctrl+g",
+        "command": "closeFindWidget",
+        "when": "editorFocus && findWidgetVisible && !isComposing"
+    },
 ]
