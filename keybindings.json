@@ -411,4 +411,9 @@
         "command": "closeFindWidget",
         "when": "editorFocus && findWidgetVisible && !isComposing"
     },
+    {
+        "key": "ctrl+space",
+        "command": "-emacs.enterMarkMode",
+        "when": "editorTextFocus"
+    },
 ]
