@@ -34,6 +34,8 @@
     "autoHide.hideOnOpen": true,
     "autoHide.autoHideSideBar": true,
     "autoHide.autoHidePanel": true,
+    "autoHide.panelDelay": 450,
+    "autoHide.sideBarDelay": 300,
     "python.formatting.provider": "black",
     "editor.wordWrap": "on",
     "workbench.startupEditor": "none",
