@@ -416,4 +416,9 @@
         "command": "-emacs.enterMarkMode",
         "when": "editorTextFocus"
     },
+    {
+        "key": "ctrl+shift+.",
+        "command": "editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
 ]
