@@ -419,11 +419,11 @@
     {
         "key": "ctrl+shift+.",
         "command": "editor.action.smartSelect.expand",
-        "when": "!calva:keybindingsEnabled && editorTextFocus"
+        "when": "!calva:keybindingsEnabled && !editorLangId == 'clojure' && editorTextFocus"
     },
     {
         "key": "ctrl+shift+,",
         "command": "editor.action.smartSelect.shrink",
-        "when": "!calva:keybindingsEnabled && editorTextFocus"
+        "when": "!calva:keybindingsEnabled && !editorLangId == 'clojure' && editorTextFocus"
     },
 ]
