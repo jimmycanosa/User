@@ -419,11 +419,11 @@
     {
         "key": "ctrl+shift+.",
         "command": "editor.action.smartSelect.expand",
-        "when": "editorTextFocus"
+        "when": "!calva:keybindingsEnabled && editorTextFocus"
     },
     {
         "key": "ctrl+shift+,",
         "command": "editor.action.smartSelect.shrink",
-        "when": "editorTextFocus"
+        "when": "!calva:keybindingsEnabled && editorTextFocus"
     },
 ]
