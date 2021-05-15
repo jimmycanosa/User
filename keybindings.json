@@ -419,11 +419,21 @@
     {
         "key": "ctrl+shift+.",
         "command": "editor.action.smartSelect.expand",
-        "when": "!calva:keybindingsEnabled && !editorLangId == 'clojure' && editorTextFocus"
+        "when": "!calva:keybindingsEnabled && editorTextFocus"
     },
     {
         "key": "ctrl+shift+,",
         "command": "editor.action.smartSelect.shrink",
-        "when": "!calva:keybindingsEnabled && !editorLangId == 'clojure' && editorTextFocus"
+        "when": "!calva:keybindingsEnabled && editorTextFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "editor.action.insertLineAfter",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "editor.action.insertLineBefore",
+        "when": "editorTextFocus && !editorReadonly"
     },
 ]
