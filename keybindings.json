@@ -307,16 +307,6 @@
         "when": "calva:connected && calva:keybindingsEnabled"
     },
     {
-        "key": "alt+n",
-        "command": "paredit.forwardUpSexp",
-        "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
-    },
-    {
-        "key": "alt+p",
-        "command": "paredit.backwardUpSexp",
-        "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
-    },
-    {
         "key": "alt+u",
         "command": "paredit.killSexpBackward",
         "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
@@ -476,11 +466,33 @@
         "command": "workbench.action.moveActiveEditorGroupUp"
     },
     {
-        "key": "ctrl+shift+alt+b",
-        "command": "workbench.action.moveEditorLeftInGroup"
+        "key": "alt+p",
+        "command": "paredit.dragSexprBackwardDown",
+        "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "alt+n",
+        "command": "paredit.dragSexprForwardDown",
+        "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "shift+alt+p",
+        "command": "paredit.dragSexprBackwardUp",
+        "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "shift+alt+n",
+        "command": "paredit.dragSexprForwardUp",
+        "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
     },
     {
         "key": "ctrl+shift+alt+f",
-        "command": "workbench.action.moveEditorRightInGroup"
+        "command": "paredit.forwardUpSexp",
+        "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
+    },
+    {
+        "key": "ctrl+shift+alt+b",
+        "command": "paredit.backwardUpSexp",
+        "when": "calva:keybindingsEnabled && editorTextFocus && editorLangId == 'clojure' && editorLangId == 'clojure' && paredit:keyMap =~ /original|strict/"
     },
 ]
