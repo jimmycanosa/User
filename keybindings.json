@@ -165,22 +165,22 @@
         "when": "!terminalFocus"
     },
     {
-        "key": "ctrl+alt+-",
+        "key": "shift+alt+u",
         "command": "editor.foldAll",
         "when": "editorTextFocus && foldingEnabled"
     },
     {
-        "key": "ctrl+alt+=",
+        "key": "shift+alt+o",
         "command": "editor.unfoldAll",
         "when": "editorTextFocus && foldingEnabled"
     },
     {
-        "key": "ctrl+alt+[",
+        "key": "shift+alt+j",
         "command": "editor.foldRecursively",
         "when": "editorTextFocus && foldingEnabled"
     },
     {
-        "key": "ctrl+alt+]",
+        "key": "shift+alt+l",
         "command": "editor.unfoldRecursively",
         "when": "editorTextFocus && foldingEnabled"
     },
@@ -433,10 +433,54 @@
     },
     {
         "key": "ctrl+tab",
-        "command": "workbench.action.nextEditor"
+        "command": "workbench.action.nextEditor",
+        "when": "!terminalFocus"
     },
     {
         "key": "ctrl+shift+tab",
-        "command": "workbench.action.previousEditor"
+        "command": "workbench.action.previousEditor",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "shift+alt+i",
+        "command": "editor.fold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "shift+alt+k",
+        "command": "editor.unfold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+shift+alt+u",
+        "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+shift+alt+o",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "ctrl+shift+alt+k",
+        "command": "workbench.action.moveActiveEditorGroupDown"
+    },
+    {
+        "key": "ctrl+shift+alt+j",
+        "command": "workbench.action.moveActiveEditorGroupLeft"
+    },
+    {
+        "key": "ctrl+shift+alt+l",
+        "command": "workbench.action.moveActiveEditorGroupRight"
+    },
+    {
+        "key": "ctrl+shift+alt+i",
+        "command": "workbench.action.moveActiveEditorGroupUp"
+    },
+    {
+        "key": "ctrl+shift+alt+b",
+        "command": "workbench.action.moveEditorLeftInGroup"
+    },
+    {
+        "key": "ctrl+shift+alt+f",
+        "command": "workbench.action.moveEditorRightInGroup"
     },
 ]
