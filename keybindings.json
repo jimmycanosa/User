@@ -503,4 +503,8 @@
         "key": "ctrl+9",
         "command": "-workbench.action.lastEditorInGroup"
     },
+    {
+        "key": "ctrl+3",
+        "command": "-workbench.action.focusThirdEditorGroup"
+    },
 ]
