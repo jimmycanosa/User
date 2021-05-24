@@ -507,4 +507,17 @@
         "key": "ctrl+3",
         "command": "-workbench.action.focusThirdEditorGroup"
     },
+    {
+        "key": "alt+e",
+        "command": "editor.action.marker.next",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+n",
+        "command": "extension.advancedNewFile"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "-extension.advancedNewFile"
+    },
 ]
